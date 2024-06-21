@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset style="text-align:center;">
+		<legend>Add Employee</legend>
+		<form th:action="@{/save}">
+			<table>
+				<tr>
+					<td>Employee No</td>
+					<td>
+						<input type="number" name="eno" placeholder="enter employee number">
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Employee Name</td>
+					<td>
+						<input type="text" name="ename" placeholder="enter employee name">
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Employee Salary</td>
+					<td>
+						<input type="number" name="esal" placeholder="enter employee salary">
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Employee Image</td>
+					<td>
+						<input type="text" name="eimage" placeholder="enter employee image">
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input type="submit" value="Save">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+</body>
+</html>
